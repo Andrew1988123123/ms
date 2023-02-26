@@ -14,7 +14,7 @@ spec:
           service:
             name: front-end
             port:
-              number: 81
+              number: 8166
         path: /
         pathType: Prefix
     {{- if .Values.host }}
