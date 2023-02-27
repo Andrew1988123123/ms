@@ -73,8 +73,8 @@ catalogue:
 frontend:
     replicas: 1
     image:
-        repo: weaveworksdemos/front-end
-        tag: 0.3.12
+        repo: 74734589924/front-end
+        tag: 1
     resources:
         limits:
             cpu: 300m
