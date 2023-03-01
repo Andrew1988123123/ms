@@ -1,0 +1,19 @@
+apiVersion: skaffold/v4beta2
+kind: Config
+metadata:
+  name: ms
+deploy:
+  helm:
+    releases:
+    - name: argocd-image-updater
+      namespace: argocd
+      chartPath: argocd-image-updater
+      valuesFiles:
+      - argocd-image-updater/values.yaml
+      version: 0.8.4
+    - name: argo-cd
+      namespace: argocd
+      chartPath: argo-cd
+      valuesFiles:
+      - argo-cd/values.yaml
+      version: 5.19.14
