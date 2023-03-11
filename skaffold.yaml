@@ -5,15 +5,21 @@ metadata:
 deploy:
   helm:
     releases:
-    - name: argocd-image-updater
-      namespace: argocd
-      chartPath: argocd-image-updater
+#    - name: argocd-image-updater
+#      namespace: argocd
+#      chartPath: argocd-image-updater
+#      valuesFiles:
+#      - argocd-image-updater/values.yaml
+#      version: 0.8.4
+#    - name: argo-cd
+#      namespace: argocd
+#      chartPath: argo-cd
+#      valuesFiles:
+#      - argo-cd/values.yaml
+#      version: 5.19.14
+    - name: helm-chart
+      namespace: default
+      chartPath: helm-chart
       valuesFiles:
-      - argocd-image-updater/values.yaml
-      version: 0.8.4
-    - name: argo-cd
-      namespace: argocd
-      chartPath: argo-cd
-      valuesFiles:
-      - argo-cd/values.yaml
-      version: 5.19.14
+      - helm-chart/values.yaml
+      version: 0.3.0

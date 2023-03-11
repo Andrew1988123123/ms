@@ -74,7 +74,7 @@ frontend:
     replicas: 1
     image:
         repo: 74734589924/front-end
-        tag: latest
+        tag: 6
     resources:
         limits:
             cpu: 300m
