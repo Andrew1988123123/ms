@@ -3,6 +3,6 @@ helm:
   - name: image.name
     value: docker.io/74734589924/front-end
     forcestring: true
-  - name: image.tag
+  - name: frontend.image.tag
     value: "9"
     forcestring: true
