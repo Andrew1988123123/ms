@@ -1,6 +1,6 @@
 helm:
   parameters:
-  - name: image.name
+  - name: frontend.image.repository
     value: docker.io/74734589924/front-end
     forcestring: true
   - name: frontend.image.tag
