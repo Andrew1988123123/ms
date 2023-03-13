@@ -4,5 +4,5 @@ helm:
     value: docker.io/74734589924/front-end
     forcestring: true
   - name: frontend.image.tag
-    value: latest@sha256:ffd5a6af43d9ca7e8c19f7e8667fd896f500c6529eb2698236e784f31c798c65
+    value: latest@sha256:5f6249a7854c9cb8827b13f92b34031de27a1da17321b68c7917e9acd6cc62ec
     forcestring: true
