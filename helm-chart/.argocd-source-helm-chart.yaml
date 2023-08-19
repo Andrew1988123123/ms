@@ -1,8 +1,8 @@
-#helm:
-#  parameters:
-#  - name: frontend.image.repo
-#    value: docker.io/74734589924/front-end
-#    forcestring: true
-#  - name: frontend.image.tag
-#    value: "21"
-#    forcestring: true
+helm:
+  parameters:
+  - name: frontend.image.repo
+    value: docker.io/weaveworksdemos/front-end
+    forcestring: true
+  - name: frontend.image.tag
+    value: "0.3.12"
+    forcestring: true
