@@ -240,7 +240,7 @@ zipkin:
             cpu: 100m
             memory: 300Mi
     enabled:  false
-    url: zipkin.zipkin.svc.cluster.local
+    url: zipkin.jaeger.svc.cluster.local
 
 zipkinmysql:
     image:
